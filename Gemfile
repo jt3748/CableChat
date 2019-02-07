@@ -61,4 +61,6 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 
 # group :production do
 #   gem 'pg', '0.21.0'
-# end
+#
+
+gem 'redis', '~> 3.2'
