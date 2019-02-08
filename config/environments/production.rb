@@ -94,4 +94,9 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'tincan.herokuapp.com' }
 
+  config.action_cable.allowed_request_origins = ['https://tincan.herokuapp.com',
+                                               'http://tincan.herokuapp.com']
+
+  config.action_cable.url = "wss://sitepoint-actioncable.herokuapp.com/cable"
+
 end
