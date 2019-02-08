@@ -64,3 +64,5 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 #
 
 gem 'redis', '~> 3.2'
+
+gem 'jquery-rails'
