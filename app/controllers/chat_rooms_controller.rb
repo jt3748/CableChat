@@ -34,6 +34,13 @@ class ChatRoomsController < ApplicationController
     end
   end
 
+  def destroy
+    @chat_room = ChatRoom.includes(:messages).find_by(id: params[:id])
+    @chat_room.destroy
+    redirect_to root_path
+end
+
+
   private
 
   def chat_room_params
